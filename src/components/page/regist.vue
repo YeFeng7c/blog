@@ -126,7 +126,7 @@
 }
 .a-login{
 	/* background-color: red; */
-    margin: 10% auto;
+    margin: 50px auto;
 }
 .inputInfo {
   width: 300px;
@@ -145,11 +145,14 @@
 }
 .buttonLink{
   width: 180px;
-  margin: auto;
+  margin: 20px auto;
   text-align: center;
 }
 .smallTip{
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
+}
+.registlink{
+
 }
 </style>

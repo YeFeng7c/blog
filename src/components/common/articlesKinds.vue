@@ -2,7 +2,7 @@
   <b-card border-variant="light" header="文章分类" align="left" class="main">
     <b-container fluid>
       <b-card-text>
-        <router-link to="/" @click.native="kinds">全部文章</router-link>
+        <router-link to="/mainPage" @click.native="kinds">全部文章</router-link>
         <b-badge variant="light" class="float-right">20篇</b-badge>
       </b-card-text>
       <b-card-text>

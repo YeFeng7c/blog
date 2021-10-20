@@ -13,6 +13,7 @@
       <!-- 导航栏右侧内容 -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item to="/">首页</b-nav-item>
+        <b-nav-item to="/doglickingDiary">舔狗日记</b-nav-item>
         <b-nav-item to="/luckyPage">抽奖</b-nav-item>
         <b-nav-item to="/about">关于</b-nav-item>
         <b-nav-item to="/message">留言</b-nav-item>

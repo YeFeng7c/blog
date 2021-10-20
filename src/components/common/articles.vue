@@ -8,7 +8,7 @@
               <b-card-title>{{item.articles_title}}</b-card-title>
             </router-link>
             <b-card-text class="small text-muted">
-              <b-badge variant="info">原创</b-badge>&nbsp;&nbsp;作者：{{item.articles_author}}&nbsp;&nbsp;分类：<router-link :to="{path: '/', query: {id: item.articles_classification }}" @click.native="kinds">{{item.articles_classification == 1 ? name1:item.articles_classification == 2 ? name2:item.articles_classification == 3 ? name3:item.articles_classification == 4 ? name4:"未分类"}} </router-link>
+              <b-badge variant="info">原创</b-badge>&nbsp;&nbsp;作者：{{item.articles_author}}&nbsp;&nbsp;分类：<router-link :to="{path: '/mainPage', query: {id: item.articles_classification }}" @click.native="kinds">{{item.articles_classification == 1 ? name1:item.articles_classification == 2 ? name2:item.articles_classification == 3 ? name3:item.articles_classification == 4 ? name4:"未分类"}} </router-link>
             </b-card-text>
             <b-card-text class="text">{{item.articles_content}}</b-card-text>
             <b-card-text class="small text-muted">
@@ -97,7 +97,7 @@ export default {
             this.id = this.$route.query.id
             var that = this
             var data = this.form
-            this.$http.post(('http://localhost:8088/articles/findArticlesByKinds?articles_classification=' + this.id), data, {
+            this.$http.post(('http://106.14.69.50:8088/articles/findArticlesByKinds?articles_classification=' + this.id), data, {
                   emulateJSON: true
                 }).then(res => {
                     this.total = res.body.data.total
@@ -109,7 +109,7 @@ export default {
         this.id = this.$route.query.id
         var that = this
         var data = this.form
-        this.$http.post(('http://localhost:8088/articles/findArticlesByKinds?articles_classification=' + this.id), data, {
+        this.$http.post(('http://106.14.69.50:8088/articles/findArticlesByKinds?articles_classification=' + this.id), data, {
               emulateJSON: true
             }).then(res => {
                 this.total = res.body.data.total

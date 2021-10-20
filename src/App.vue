@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navBar></navBar>
+    <headers></headers>
  <div id="v-content" v-bind:style="{minHeight: Height+'px'}"> <router-view /></div>
     <footer class="foot">
       <p><a class="linkHref" href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2021004731号</a></p>
@@ -14,12 +14,13 @@
 </template>
 
 <script>
-import navBar from "@/components/common/navBar";
+
 import donate from "@/components/common/donate";
+import headers from "@/components/common/header";
 export default {
   name: "App",
   components: {
-    navBar,
+    headers,
     donate
   },
   data() {
@@ -69,7 +70,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="less">
+
   .foot {
 	  text-align: center;
 	  background-color: #F8F9FA;

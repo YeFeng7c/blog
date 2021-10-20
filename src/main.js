@@ -9,10 +9,19 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'github-markdown-css/github-markdown.css';
 import VueResource from 'vue-resource'
 import LuckDraw from 'vue-luck-draw'
+import less from 'less'
+//复制到粘贴板插件
+import VueClipboard from 'vue-clipboard2'
+//import vueBaberrage from 'vue-baberrage'
+import { vueBaberrage } from 'vue-baberrage'
 import App from './App'
 import router from './router'
 
 
+Vue.use(vueBaberrage)
+//Vue.use(vueBaberrage)
+Vue.use(VueClipboard)
+Vue.use(less)
 Vue.use(LuckDraw)
 Vue.use(VueResource)
 Vue.use(ElementUI)

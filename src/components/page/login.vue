@@ -61,7 +61,7 @@
 
 .login{
 	/* background-color: red; */
-    margin: 10% auto;
+    margin: 50px auto;
 }
 .logo{
   width: 300px;

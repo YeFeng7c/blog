@@ -41,6 +41,14 @@ export default {
           this.classification = res.body.data[0].articles_classification
           this.date = res.body.data[0].articles_date
           this.tag = res.body.data[0].articles_tag
+              let converter = new showdown.Converter({
+                // 使代码高亮显示
+                extensions: [showdownHighlight]
+              });
+              // markdown 转 html
+              this.content = converter.makeHtml(this.content);
+
+
         });
         },
     methods: {
